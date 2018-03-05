@@ -7,3 +7,6 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+blas_1
+blas_2
+blas_3_basic
