@@ -1,66 +1,13 @@
-/*
- * --------------------------------------------------------------------------
- * BLISLAB 
- * --------------------------------------------------------------------------
- * Copyright (C) 2016, The University of Texas at Austin
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are
- * met:
- *  - Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- *  - Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- *  - Neither the name of The University of Texas nor the names of its
- *    contributors may be used to endorse or promote products derived
- *    from this software without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
- * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
- * HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
- * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
- * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
- * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
- * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
- * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
- * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- *
- *
- * test_bl_dgemm.c
- *
- *
- * Purpose:
- * test driver for BLISLAB dgemm routine and reference dgemm routine.
- *
- * Todo:
- *
- *
- * Modification:
- *
- * 
- * */
-
 #ifdef LIKWID_PERFMON
-#include <likwid.h>
+    #include <likwid.h>
 #endif
 
 #include "bl_dgemm.h"
 
 #define USE_SET_DIFF 1
 #define TOLERANCE 1E-10
-void computeError(
-        int    ldc,
-        int    ldc_ref,
-        int    m,
-        int    n,
-        double *C,
-        double *C_ref
-        )
-{
-    int    i, j;
+void computeError( int ldc, int ldc_ref, int m, int n, double *C, double *C_ref ){
+    int i, j;
     for ( i = 0; i < m; i ++ ) {
         for ( j = 0; j < n; j ++ ) {
             if ( fabs( C( i, j ) - C_ref( i, j ) ) > TOLERANCE ) {
@@ -72,12 +19,7 @@ void computeError(
 
 }
 
-void test_bl_dgemm(
-        int m,
-        int n,
-        int k
-        ) 
-{
+void test_bl_dgemm( int m, int n, int k ) {
     int    i, j, p, nx;
     double *A, *B, *C, *C_ref;
     double tmp, error, flops;
@@ -132,19 +74,7 @@ void test_bl_dgemm(
     
     for ( i = 0; i < nrepeats; i ++ ) {
         bl_dgemm_beg = bl_clock();
-        {
-            bl_dgemm(
-                    m,
-                    n,
-                    k,
-                    A,
-                    lda,
-                    B,
-                    ldb,
-                    C,
-                    ldc
-                    );
-        }
+        bl_dgemm( m, n, k, A, lda, B, ldb, C, ldc );
         bl_dgemm_time = bl_clock() - bl_dgemm_beg;
 
         if ( i == 0 ) {
@@ -152,7 +82,6 @@ void test_bl_dgemm(
         } else {
             bl_dgemm_rectime = bl_dgemm_time < bl_dgemm_rectime ? bl_dgemm_time : bl_dgemm_rectime;
         }
-        //printf(">>> (1) %f\n",bl_dgemm_rectime);
     }
         
 #ifdef LIKWID_PERFMON
@@ -161,19 +90,7 @@ void test_bl_dgemm(
 
     for ( i = 0; i < nrepeats; i ++ ) {
         ref_beg = bl_clock();
-        {
-            bl_dgemm_ref(
-                    m,
-                    n,
-                    k,
-                    A,
-                    lda,
-                    B,
-                    ldb,
-                    C_ref,
-                    ldc_ref
-                    );
-        }
+        bl_dgemm_ref( m, n, k, A, lda, B, ldb, C_ref, ldc_ref );
         ref_time = bl_clock() - ref_beg;
 
         if ( i == 0 ) {
@@ -183,14 +100,7 @@ void test_bl_dgemm(
         }
     }
 
-    computeError(
-            ldc,
-            ldc_ref,
-            m,
-            n,
-            C,
-            C_ref
-            );
+    computeError( ldc, ldc_ref, m, n, C, C_ref );
 
     // Compute overall floating point operations.
     flops = ( m * n / ( 1000.0 * 1000.0 * 1000.0 ) ) * ( 2 * k );
@@ -204,8 +114,7 @@ void test_bl_dgemm(
     free( C_ref );
 }
 
-int main( int argc, char *argv[] )
-{
+int main( int argc, char *argv[] ) {
 
 #ifdef LIKWID_PERFMON
     LIKWID_MARKER_INIT;
