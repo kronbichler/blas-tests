@@ -2,7 +2,7 @@
     #include <likwid.h>
 #endif
 
-#include "bl_dgemm.h"
+#include "../includes/blislab/bl_dgemm.h"
 
 #define USE_SET_DIFF 1
 #define TOLERANCE 1E-10
