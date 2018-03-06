@@ -10,3 +10,4 @@ CTestTestfile.cmake
 blas_1
 blas_2
 blas_3_basic
+build/
