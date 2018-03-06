@@ -19,10 +19,10 @@ void computeError( int ldc, int ldc_ref, int m, int n, double *C, double *C_ref 
 
 }
 
-void run_dgemm( int m, int n, int k, int nrepeats) {
+void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
     int    i, j, p, nx;
     double *A, *B, *C, *C_ref;
-    double tmp, error, flops;
+    double tmp, error;
     double ref_beg, ref_time, bl_dgemm_beg, bl_dgemm_time;
     int    lda, ldb, ldc, ldc_ref;
     double ref_rectime, bl_dgemm_rectime;
@@ -39,27 +39,27 @@ void run_dgemm( int m, int n, int k, int nrepeats) {
 #endif
     ldc_ref = m;
     C     = bl_malloc_aligned( ldc, n + 4, sizeof(double) );
-    C_ref = (double*)malloc( sizeof(double) * m * n );
 
     srand48 (time(NULL));
 
     // Randonly generate points in [ 0, 1 ].
-    for ( p = 0; p < k; p ++ ) {
-        for ( i = 0; i < m; i ++ ) {
+    for ( p = 0; p < k; p ++ ) 
+        for ( i = 0; i < m; i ++ ) 
             A( i, p ) = (double)( drand48() );	
-        }
-    }
-    for ( j = 0; j < n; j ++ ) {
-        for ( p = 0; p < k; p ++ ) {
+            
+    for ( j = 0; j < n; j ++ )
+        for ( p = 0; p < k; p ++ )
             B( p, j ) = (double)( drand48() );
-        }
-    }
 
-    for ( j = 0; j < n; j ++ ) {
-        for ( i = 0; i < m; i ++ ) {
-            C_ref( i, j ) = (double)( 0.0 );	
+    for ( j = 0; j < n; j ++ )
+        for ( i = 0; i < m; i ++ )
                 C( i, j ) = (double)( 0.0 );	
-        }
+
+    if(check){
+        C_ref = (double*)malloc( sizeof(double) * m * n );
+        for ( j = 0; j < n; j ++ )
+            for ( i = 0; i < m; i ++ )
+                C_ref( i, j ) = (double)( 0.0 );	
     }
 
     
@@ -85,30 +85,33 @@ void run_dgemm( int m, int n, int k, int nrepeats) {
         LIKWID_MARKER_STOP(name);
 #endif
 
-    for ( i = 0; i < nrepeats; i ++ ) {
-        ref_beg = bl_clock();
-        bl_dgemm_ref( m, n, k, A, lda, B, ldb, C_ref, ldc_ref );
-        ref_time = bl_clock() - ref_beg;
+    // Compute overall floating point operations.
+    const double flops = ( m * n / ( 1000.0 * 1000.0 * 1000.0 ) ) * ( 2 * k );
+    
+    if(check){
+        for ( i = 0; i < nrepeats; i ++ ) {
+            ref_beg = bl_clock();
+            bl_dgemm_ref( m, n, k, A, lda, B, ldb, C_ref, ldc_ref );
+            ref_time = bl_clock() - ref_beg;
 
-        if ( i == 0 ) {
-            ref_rectime = ref_time;
-        } else {
-            ref_rectime = ref_time < ref_rectime ? ref_time : ref_rectime;
+            if ( i == 0 ) {
+                ref_rectime = ref_time;
+            } else {
+                ref_rectime = ref_time < ref_rectime ? ref_time : ref_rectime;
+            }
         }
+
+        computeError( ldc, ldc_ref, m, n, C, C_ref );
+        free(C_ref);
+        printf( ">>> (0) %5d %5d %5d %5.2lf %5.2lf\n", 
+                m, n, k, flops / bl_dgemm_rectime, flops / ref_rectime );
+    } else {
+        printf( ">>> (0) %5d %5d %5d %5.2lf\n", 
+                m, n, k, flops / bl_dgemm_rectime );
     }
 
-    computeError( ldc, ldc_ref, m, n, C, C_ref );
-
-    // Compute overall floating point operations.
-    flops = ( m * n / ( 1000.0 * 1000.0 * 1000.0 ) ) * ( 2 * k );
-
-    printf( ">>> (0) %5d %5d %5d %5.2lf %5.2lf\n", 
-            m, n, k, flops / bl_dgemm_rectime, flops / ref_rectime );
-
-    free( A     );
-    free( B     );
-    free( C     );
-    free( C_ref );
+    // clean up
+    free(A); free(B); free(C);
 }
 
 int main( int argc, char *argv[] ) {
@@ -140,7 +143,7 @@ int main( int argc, char *argv[] ) {
 #endif
 
   // run dgemm 
-  run_dgemm( m, n, k , n_repetitions);
+  run_dgemm( m, n, k , n_repetitions, argc > 5);
     
   // finalize LIKWID
 #ifdef LIKWID_PERFMON
