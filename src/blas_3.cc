@@ -19,12 +19,11 @@ void computeError( int ldc, int ldc_ref, int m, int n, double *C, double *C_ref 
 
 }
 
-void test_bl_dgemm( int m, int n, int k ) {
+void run_dgemm( int m, int n, int k, int nrepeats) {
     int    i, j, p, nx;
     double *A, *B, *C, *C_ref;
     double tmp, error, flops;
     double ref_beg, ref_time, bl_dgemm_beg, bl_dgemm_time;
-    int    nrepeats;
     int    lda, ldb, ldc, ldc_ref;
     double ref_rectime, bl_dgemm_rectime;
 
@@ -41,8 +40,6 @@ void test_bl_dgemm( int m, int n, int k ) {
     ldc_ref = m;
     C     = bl_malloc_aligned( ldc, n + 4, sizeof(double) );
     C_ref = (double*)malloc( sizeof(double) * m * n );
-
-    nrepeats = 3;
 
     srand48 (time(NULL));
 
@@ -115,28 +112,37 @@ void test_bl_dgemm( int m, int n, int k ) {
 }
 
 int main( int argc, char *argv[] ) {
+    
+  // process input arguments: size m:
+  int m = 100;
+  if (argc > 1) m = std::atoi(argv[1]);
+  
+  // ... size n:
+  int n = m;
+  if (argc > 2) n = std::atoi(argv[2]);
+  
+  // ... size k:
+  int k = m;
+  if (argc > 3) k = std::atoi(argv[3]);
+  
+  // ... number of repetitions:
+  std::size_t n_repetitions = 3;
+  if (argc > 4) n_repetitions = std::atoi(argv[4]);
+    
 
+  // initialize LIKWID as profiler
 #ifdef LIKWID_PERFMON
-    LIKWID_MARKER_INIT;
+  LIKWID_MARKER_INIT;
 #pragma omp parallel
-    {
-        LIKWID_MARKER_THREADINIT;
-    }
+  {
+    LIKWID_MARKER_THREADINIT;
+  }
 #endif
+
+  // run dgemm 
+  run_dgemm( m, n, k , n_repetitions);
     
-    int    m, n, k; 
-
-    if ( argc != 4 ) {
-        printf( "Error: require 3 arguments, but only %d provided.\n", argc - 1 );
-        exit( 0 );
-    }
-
-    sscanf( argv[ 1 ], "%d", &m );
-    sscanf( argv[ 2 ], "%d", &n );
-    sscanf( argv[ 3 ], "%d", &k );
-
-    test_bl_dgemm( m, n, k );
-    
+  // finalize LIKWID
 #ifdef LIKWID_PERFMON
     LIKWID_MARKER_CLOSE;
 #endif
