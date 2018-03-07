@@ -7,38 +7,33 @@
 #define USE_SET_DIFF 1
 #define TOLERANCE 1E-10
 void computeError( int ldc, int ldc_ref, int m, int n, double *C, double *C_ref ){
-    int i, j;
-    for ( i = 0; i < m; i ++ ) {
-        for ( j = 0; j < n; j ++ ) {
+    for (int i = 0; i < m; i ++ ) 
+        for (int j = 0; j < n; j ++ ) 
             if ( fabs( C( i, j ) - C_ref( i, j ) ) > TOLERANCE ) {
                 printf( "C[ %d ][ %d ] != C_ref, %E, %E\n", i, j, C( i, j ), C_ref( i, j ) );
                 break;
             }
-        }
-    }
 
 }
 
 void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
-    int    i, j, p, nx;
-    double *A, *B, *C, *C_ref;
-    double tmp, error;
+    int    i, j, p;
     double ref_beg, ref_time, bl_dgemm_beg, bl_dgemm_time;
-    int    lda, ldb, ldc, ldc_ref;
     double ref_rectime, bl_dgemm_rectime;
 
-    A    = (double*)malloc( sizeof(double) * m * k );
-    B    = (double*)malloc( sizeof(double) * k * n );
+    double* A    = (double*)malloc( sizeof(double) * m * k );
+    double* B    = (double*)malloc( sizeof(double) * k * n );
 
-    lda = m;
-    ldb = k;
+    const int lda = m;
+    const int ldb = k;
+    const int ldc =
 #ifdef DGEMM_MR
-    ldc = ( ( m - 1 ) / DGEMM_MR + 1 ) * DGEMM_MR;
+              ( ( m - 1 ) / DGEMM_MR + 1 ) * DGEMM_MR;
 #else
-    ldc     = m;
+              m;
 #endif
-    ldc_ref = m;
-    C     = bl_malloc_aligned( ldc, n + 4, sizeof(double) );
+    int ldc_ref = m;
+    double* C     = bl_malloc_aligned( ldc, n + 4, sizeof(double) );
 
     srand48 (time(NULL));
 
@@ -55,6 +50,7 @@ void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
         for ( i = 0; i < m; i ++ )
                 C( i, j ) = (double)( 0.0 );	
 
+    double* C_ref;
     if(check){
         C_ref = (double*)malloc( sizeof(double) * m * n );
         for ( j = 0; j < n; j ++ )
@@ -106,8 +102,9 @@ void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
         printf( ">>> (0) %5d %5d %5d %5.2lf %5.2lf\n", 
                 m, n, k, flops / bl_dgemm_rectime, flops / ref_rectime );
     } else {
-        printf( ">>> (0) %5d %5d %5d %5.2lf\n", 
-                m, n, k, flops / bl_dgemm_rectime );
+        printf("Test C=A*B with A=%dX%d B=%dX%d\n", m,k,k,n);
+        printf( "Serial  1 thread %15.5lf GFLOPs/s\n", 
+                flops / bl_dgemm_rectime );
     }
 
     // clean up
