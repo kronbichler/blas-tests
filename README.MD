@@ -8,8 +8,7 @@ which gives an hands-on introduction into the basic concepts of the library
 ... reading homework:
 
 * [Goto, Kazushige; van de Geijn, Robert A. (2008): "Anatomy of high-performance matrix
-multiplication."](
-http://www.cs.utexas.edu/~flame/pubs/GotoTOMS_revision.pdf)
+multiplication."](http://www.cs.utexas.edu/~flame/pubs/GotoTOMS_revision.pdf)
 
 
 * [Smith, Tyler M.; van de Geijn, Robert; Smelyanskiy, Mikhail; Hammond, Jeff R.; van Zee,
