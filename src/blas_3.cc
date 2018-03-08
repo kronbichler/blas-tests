@@ -1,3 +1,9 @@
+#include <iostream>
+#include <iomanip>
+#include <vector>
+#include <chrono>
+#include <cmath>
+
 #ifdef LIKWID_PERFMON
     #include <likwid.h>
 #endif
@@ -40,22 +46,22 @@ void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
     // Randonly generate points in [ 0, 1 ].
     for ( p = 0; p < k; p ++ ) 
         for ( i = 0; i < m; i ++ ) 
-            A( i, p ) = (double)( drand48() );	
+            A( i, p ) = static_cast<double>(rand())/RAND_MAX;	
             
     for ( j = 0; j < n; j ++ )
         for ( p = 0; p < k; p ++ )
-            B( p, j ) = (double)( drand48() );
+            B( p, j ) = static_cast<double>(rand())/RAND_MAX;
 
     for ( j = 0; j < n; j ++ )
         for ( i = 0; i < m; i ++ )
-                C( i, j ) = (double)( 0.0 );	
+            C( i, j ) = static_cast<double>(rand())/RAND_MAX;
 
     double* C_ref;
     if(check){
         C_ref = (double*)malloc( sizeof(double) * m * n );
         for ( j = 0; j < n; j ++ )
             for ( i = 0; i < m; i ++ )
-                C_ref( i, j ) = (double)( 0.0 );	
+                C_ref( i, j ) = static_cast<double>(rand())/RAND_MAX;	
     }
 
     
