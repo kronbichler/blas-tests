@@ -9,7 +9,12 @@
     #include <likwid.h>
 #endif
 
-#include "../includes/blislab/bl_dgemm.h"
+#include "../includes/blislab/bl_dgemm_util.h"
+#if BL_TEST == 0
+    #include "../includes/blislab/bl_dgemm_simple.h"
+#else
+    #include "../includes/blislab/bl_dgemm.h"
+#endif
 
 #define USE_SET_DIFF 1
 #define TOLERANCE 1E-10

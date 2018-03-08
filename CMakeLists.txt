@@ -10,7 +10,14 @@ set(CMAKE_CXX_FLAGS_DEBUG "-O0 -g")
 
 add_executable(blas_1 src/blas_1.cc)
 add_executable(blas_2 src/blas_2.cc)
-add_executable(blas_3 src/blas_3.cc 
+
+
+add_executable(blas_3_v0 src/blas_3.cc)
+
+target_compile_definitions(blas_3_v0 PRIVATE BL_TEST=0)
+
+
+add_executable(blas_3_v1 src/blas_3.cc 
     includes/blislab/kernels/bl_dgemm_asm_12x4.cpp 
     includes/blislab/kernels/bl_dgemm_asm_4x12.cpp 
     includes/blislab/kernels/bl_dgemm_asm_6x8.cpp
@@ -18,4 +25,17 @@ add_executable(blas_3 src/blas_3.cc
     includes/blislab/kernels/bl_dgemm_int_8x4.cpp 
     includes/blislab/kernels/bl_dgemm_ukr.cpp 
 )
+
+target_compile_definitions(blas_3_v1 PRIVATE BL_TEST=1)
+
+add_executable(blas_3_v2 src/blas_3.cc 
+    includes/blislab/kernels/bl_dgemm_asm_12x4.cpp 
+    includes/blislab/kernels/bl_dgemm_asm_4x12.cpp 
+    includes/blislab/kernels/bl_dgemm_asm_6x8.cpp
+    includes/blislab/kernels/bl_dgemm_asm_8x6.cpp 
+    includes/blislab/kernels/bl_dgemm_int_8x4.cpp 
+    includes/blislab/kernels/bl_dgemm_ukr.cpp 
+)
+
+target_compile_definitions(blas_3_v2 PRIVATE BL_TEST=2)
 
