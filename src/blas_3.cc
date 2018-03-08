@@ -28,9 +28,6 @@ void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
     double blis_dgemm_time = std::numeric_limits<double>::max(); 
     double ref_dgemm_time  = blis_dgemm_time;
 
-    double* A    = (double*)malloc( sizeof(double) * m * k );
-    double* B    = (double*)malloc( sizeof(double) * k * n );
-
     const int lda = m;
     const int ldb = k;
     const int ldc =
@@ -39,12 +36,13 @@ void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
 #else
               m;
 #endif
-    int ldc_ref = m;
-    double* C     = bl_malloc_aligned( ldc, n + 4, sizeof(double) );
+    
+    // allocate memory for matrices...          
+    double* A = (double*)malloc( sizeof(double) * m * k );
+    double* B = (double*)malloc( sizeof(double) * k * n );
+    double* C = bl_malloc_aligned( ldc, n + 4, sizeof(double) );
 
-    srand48 (time(NULL));
-
-    // Randonly generate points in [ 0, 1 ].
+    // ... fill matrices
     for ( p = 0; p < k; p ++ ) 
         for ( i = 0; i < m; i ++ ) 
             A( i, p ) = static_cast<double>(rand())/RAND_MAX;	
@@ -57,24 +55,17 @@ void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
         for ( i = 0; i < m; i ++ )
             C( i, j ) = static_cast<double>(rand())/RAND_MAX;
 
-    double* C_ref;
-    if(check){
-        C_ref = (double*)malloc( sizeof(double) * m * n );
-        for ( j = 0; j < n; j ++ )
-            for ( i = 0; i < m; i ++ )
-                C_ref( i, j ) = static_cast<double>(rand())/RAND_MAX;	
-    }
-
-    
 #ifdef LIKWID_PERFMON
         char name[256];
         sprintf ( name, "size-%d-%d-%d", m, n, k );
         LIKWID_MARKER_START(name);
 #endif
     
+    // perform DGEMM and measure time
     for ( i = 0; i < nrepeats; i ++ ) {
         auto start = std::chrono::high_resolution_clock::now();
         bl_dgemm( m, n, k, A, lda, B, ldb, C, ldc );
+        // only consider fastest run
         blis_dgemm_time = std::min(
                 blis_dgemm_time,
                 std::chrono::duration<double>(std::chrono::high_resolution_clock::now()-start).count());
@@ -84,10 +75,19 @@ void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
         LIKWID_MARKER_STOP(name);
 #endif
 
-    // Compute overall floating point operations.
+    // compute overall floating point operations
     const double flops = ( m * n / ( 1000.0 * 1000.0 * 1000.0 ) ) * ( 2 * k );
     
+    // perform check?
     if(check){
+        // ... yes!
+        int ldc_ref = m;
+        double* C_ref;
+        C_ref = (double*)malloc( sizeof(double) * m * n );
+        for ( j = 0; j < n; j ++ )
+            for ( i = 0; i < m; i ++ )
+                C_ref( i, j ) = static_cast<double>(rand())/RAND_MAX;	
+        
         for ( i = 0; i < nrepeats; i ++ ) {
             auto start = std::chrono::high_resolution_clock::now();
             bl_dgemm_ref( m, n, k, A, lda, B, ldb, C_ref, ldc_ref );
@@ -98,12 +98,12 @@ void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
 
         computeError( ldc, ldc_ref, m, n, C, C_ref );
         free(C_ref);
-        printf( ">>> (0) %5d %5d %5d %5.2lf %5.2lf\n", 
+        printf( "%5d %5d %5d %15.5lf GFLOPs/s  %15.5lf GFLOPs/s\n", 
                 m, n, k, flops / blis_dgemm_time, flops / ref_dgemm_time );
     } else {
-        printf("Test C=A*B with A=%dX%d B=%dX%d\n", m,k,k,n);
-        printf( "Serial  1 thread %15.5lf GFLOPs/s\n", 
-                flops / blis_dgemm_time );
+        // ... no: only print performance results
+        //printf("Test C=A*B with A=%dX%d B=%dX%d\n", m,k,k,n);
+        printf( "%5d %5d %5d %15.5lf GFLOPs/s\n", m, n, k, flops / blis_dgemm_time );
     }
 
     // clean up
