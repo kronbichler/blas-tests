@@ -1,0 +1,65 @@
+\begin{thebibliography}{}
+
+   
+  
+\bibitem{Bosilca.2014}
+{\color{blue}Baruffa}, Fabio; Iapichino, Luigi (2017): ``{HPC Code Optimization Workshop Part 2: 4 May 2017}.''  \emph{{Leibniz-Rechenzentrum der Bayerischen Akademie der Wissenschaften, Intel® Parallel Computing Center}}. [Online]. Available: \url{https://www.lrz.de/services/compute/courses/x_lecturenotes/HPC_Code_Optimisation_Workshop/hpc-optimization-workshop-part2.pdf}.
+
+
+
+\bibitem{Avizienis.2004}
+``{{\color{blue}BLISlab}: A Sandbox for Optimizing GEMM}.'' [Online]. Available:  https://github.com/flame/blislab.
+
+\bibitem{Bosilca.January2015}
+{\color{blue}Bosilca}, George; Delmas, Rémi; Dongarra, Jack; Langou, Julien (2009):
+  ``{ Algorithm-based fault tolerance applied to high performance computing}.'' In: \emph{{Journal of Parallel and Distributed Computing}},  69 (4), S. 410–416. DOI: 10.1016/j.jpdc.2008.12.002.
+  
+    
+\bibitem{Bouteiller.2015}
+{\color{blue}Cannon}, Lynn Elliot (1969):
+  ``{A cellular computer to implement the Kalman filter algorithm}. A thesis submitted to the Graduate Faculty in partial fulfillment of the requirements for the degree of Doctor of Philosophy in Electrical Engineering Montana State University.''  [Online]. Available:  \url{http://scholarworks.montana.edu/xmlui/bitstream/handle/1/4168/31762100054244.pdf?sequence=1}.
+
+\bibitem{Chen.2005}
+{\color{blue}Frigo}, Matteo; Leiserson, Charles E.; Prokop, Harald; Ramachandran, Sridhar (1999):
+ ``{Cache-Oblivious Algorithms}.'' [Online]. Available:  \url{https://www.cc.gatech.edu/~bader/COURSES/GATECH/CSE-Algs-Fall2013/papers/FLP99.pdf}.
+
+
+\bibitem{Herault.2015}
+van de {\color{blue}Geijn}, R. A.; Watts, J. (1997): ``{SUMMA. Scalable universal matrix multiplication algorithm}.'' In: \emph{{Concurrency: Pract. Exper. }}  9 (4), S. 255–274. DOI: 10.1002/(SICI)1096-9128(199704)9:4$<$255::AID-CPE250$>$3.0.CO;2-2.
+
+
+\bibitem{Dongarra.1998}
+{\color{blue}Goto}, Kazushige; van de Geijn, Robert A. (2008): ``Anatomy of high-performance matrix multiplication.'' \hskip 1em plus 0.5em minus
+  0.4em\relax In: \emph{{ACM Trans. Math. Softw.}},  34 (3), S. 1–25. DOI: 10.1145/1356052.1356053.
+
+\bibitem{Bosilca.2009}
+``{GitHub - RRZE-HPC/{\color{blue}likwid}: Performance monitoring and benchmarking suite.}'' [Online]. Available:  \url{https://github.com/RRZE-HPC/likwid}.
+
+\bibitem{GeijnR.A.vande.1997}
+{\color{blue}McCalpin}, John (2016): ``{Intel discloses “vector+SIMD” instructions for future processors}.'' [Online]. Available:  \url{https://sites.utexas.edu/jdm4372/2016/11/05/intel-discloses-vectorsimd-instructions-for-future-processors/}.
+  
+
+ 
+
+\bibitem{HeeneM..2017}
+{\color{blue}Smith}, Tyler M.; van de Geijn, Robert; Smelyanskiy, Mikhail; Hammond, Jeff R.; van Zee, Field G. (2014): ``{Anatomy of high-performance many-threaded matrix multiplication}.'' [Online]. Available:  \url{https://www.cs.utexas.edu/users/flame/pubs/blis3_ipdps14.pdf}.
+
+
+  
+\bibitem{Schroeder.2007}
+{\color{blue}Williams}, Samuel; Waterman, Andrew; Patterson, David (2009): ``{ Roofline: an insightful visual performance model for multicore architectures.}'' In: \emph{{Commun. ACM}}, 52 (4), S. 65–76. DOI: 10.1145/1498765.1498785.
+
+
+\bibitem{HinojosaA.P..}
+van {\color{blue}Zee}, Field G.; Austel, Vernon; Gunnels, John A.; Killough, Lee; Smith, Tyler M.; Marker, Bryan et al. (2016): ``{The BLIS Framework}.'' In:
+  \emph{{ACM Trans. Math. Softw.}} 42 (2), S. 1–19. DOI: 10.1145/2755561.
+  
+\bibitem{Huang.1984}
+van Zee, Field G.; van de Geijn, Robert A. (2015): ``{BLIS: A Framework for Rapidly Instantiating BLAS Functionality}.'' In: \emph{{ACM Trans. Math. Softw.}} 41 (3), S. 1–33. DOI: 10.1145/2764454.
+
+
+%\bibitem{LRZ}
+%``{{\color{blue}LRZ}: SuperMUC Petascale System}.'' [Online]. Available: \url{https://www.lrz.de/services/compute/supermuc/systemdescription/}
+    
+
+\end{thebibliography}

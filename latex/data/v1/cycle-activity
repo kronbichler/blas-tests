@@ -1,0 +1,1041 @@
+>>> (0) i j k flop flop-ref
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)   256   256   256 10.12 23.74
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599955976 GHz,,,,
+TABLE,Region size-256-256-256,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],0.010855,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,24789820,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,9441841,,,
+CPU_CLK_UNHALTED_REF,FIXC2,20426640,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,983747,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,1053633,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,906913,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,1373844,,,
+TABLE,Region size-256-256-256,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,24789820,24789820,24789820,24789820
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,9441841,9441841,9441841,9441841
+CPU_CLK_UNHALTED_REF STAT,FIXC2,20426640,20426640,20426640,20426640
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,983747,983747,983747,983747
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,1053633,1053633,1053633,1053633
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,906913,906913,906913,906913
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,1373844,1373844,1373844,1373844
+TABLE,Region size-256-256-256,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],0.0109,,,,
+Runtime unhalted [s],0.0036,,,,
+Clock [MHz],1201.7821,,,,
+CPI,0.3809,,,,
+Cycles without execution [%],14.5506,,,,
+Cycles without execution due to L1D [%],9.6053,,,,
+Cycles without execution due to L2 [%],10.4190,,,,
+Cycles without execution due to memory [%],11.1592,,,,
+TABLE,Region size-256-256-256,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,0.0109,0.0109,0.0109,0.0109,
+Runtime unhalted [s] STAT,0.0036,0.0036,0.0036,0.0036,
+Clock [MHz] STAT,1201.7821,1201.7821,1201.7821,1201.7821,
+CPI STAT,0.3809,0.3809,0.3809,0.3809,
+Cycles without execution [%] STAT,14.5506,14.5506,14.5506,14.5506,
+Cycles without execution due to L1D [%] STAT,9.6053,9.6053,9.6053,9.6053,
+Cycles without execution due to L2 [%] STAT,10.4190,10.4190,10.4190,10.4190,
+Cycles without execution due to memory [%] STAT,11.1592,11.1592,11.1592,11.1592,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)   512   512   512 20.50 30.46
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599987954 GHz,,,,
+TABLE,Region size-512-512-512,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],0.043831,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,189964500,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,104005300,,,
+CPU_CLK_UNHALTED_REF,FIXC2,104005800,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,32698610,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,32923870,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,31220280,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,33533140,,,
+TABLE,Region size-512-512-512,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,189964500,189964500,189964500,189964500
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,104005300,104005300,104005300,104005300
+CPU_CLK_UNHALTED_REF STAT,FIXC2,104005800,104005800,104005800,104005800
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,32698610,32698610,32698610,32698610
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,32923870,32923870,32923870,32923870
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,31220280,31220280,31220280,31220280
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,33533140,33533140,33533140,33533140
+TABLE,Region size-512-512-512,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],0.0438,,,,
+Runtime unhalted [s],0.0400,,,,
+Clock [MHz],2599.9755,,,,
+CPI,0.5475,,,,
+Cycles without execution [%],32.2418,,,,
+Cycles without execution due to L1D [%],30.0180,,,,
+Cycles without execution due to L2 [%],31.4394,,,,
+Cycles without execution due to memory [%],31.6560,,,,
+TABLE,Region size-512-512-512,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,0.0438,0.0438,0.0438,0.0438,
+Runtime unhalted [s] STAT,0.0400,0.0400,0.0400,0.0400,
+Clock [MHz] STAT,2599.9755,2599.9755,2599.9755,2599.9755,
+CPI STAT,0.5475,0.5475,0.5475,0.5475,
+Cycles without execution [%] STAT,32.2418,32.2418,32.2418,32.2418,
+Cycles without execution due to L1D [%] STAT,30.0180,30.0180,30.0180,30.0180,
+Cycles without execution due to L2 [%] STAT,31.4394,31.4394,31.4394,31.4394,
+Cycles without execution due to memory [%] STAT,31.6560,31.6560,31.6560,31.6560,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)   768   768   768 26.85 33.34
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599989481 GHz,,,,
+TABLE,Region size-768-768-768,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],0.117816,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,627011600,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,283742400,,,
+CPU_CLK_UNHALTED_REF,FIXC2,283742700,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,64967120,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,66764230,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,61046940,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,67825840,,,
+TABLE,Region size-768-768-768,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,627011600,627011600,627011600,627011600
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,283742400,283742400,283742400,283742400
+CPU_CLK_UNHALTED_REF STAT,FIXC2,283742700,283742700,283742700,283742700
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,64967120,64967120,64967120,64967120
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,66764230,66764230,66764230,66764230
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,61046940,61046940,61046940,61046940
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,67825840,67825840,67825840,67825840
+TABLE,Region size-768-768-768,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],0.1178,,,,
+Runtime unhalted [s],0.1091,,,,
+Clock [MHz],2599.9867,,,,
+CPI,0.4525,,,,
+Cycles without execution [%],23.9040,,,,
+Cycles without execution due to L1D [%],21.5149,,,,
+Cycles without execution due to L2 [%],22.8965,,,,
+Cycles without execution due to memory [%],23.5299,,,,
+TABLE,Region size-768-768-768,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,0.1178,0.1178,0.1178,0.1178,
+Runtime unhalted [s] STAT,0.1091,0.1091,0.1091,0.1091,
+Clock [MHz] STAT,2599.9867,2599.9867,2599.9867,2599.9867,
+CPI STAT,0.4525,0.4525,0.4525,0.4525,
+Cycles without execution [%] STAT,23.9040,23.9040,23.9040,23.9040,
+Cycles without execution due to L1D [%] STAT,21.5149,21.5149,21.5149,21.5149,
+Cycles without execution due to L2 [%] STAT,22.8965,22.8965,22.8965,22.8965,
+Cycles without execution due to memory [%] STAT,23.5299,23.5299,23.5299,23.5299,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  1024  1024  1024 35.50 41.42
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599989569 GHz,,,,
+TABLE,Region size-1024-1024-1024,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],0.214451,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,1478222000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,658023700,,,
+CPU_CLK_UNHALTED_REF,FIXC2,532219000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,149993200,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,155976900,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,142142100,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,157066300,,,
+TABLE,Region size-1024-1024-1024,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,1478222000,1478222000,1478222000,1478222000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,658023700,658023700,658023700,658023700
+CPU_CLK_UNHALTED_REF STAT,FIXC2,532219000,532219000,532219000,532219000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,149993200,149993200,149993200,149993200
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,155976900,155976900,155976900,155976900
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,142142100,142142100,142142100,142142100
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,157066300,157066300,157066300,157066300
+TABLE,Region size-1024-1024-1024,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],0.2145,,,,
+Runtime unhalted [s],0.2531,,,,
+Clock [MHz],3214.5691,,,,
+CPI,0.4451,,,,
+Cycles without execution [%],23.8694,,,,
+Cycles without execution due to L1D [%],21.6014,,,,
+Cycles without execution due to L2 [%],22.7945,,,,
+Cycles without execution due to memory [%],23.7038,,,,
+TABLE,Region size-1024-1024-1024,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,0.2145,0.2145,0.2145,0.2145,
+Runtime unhalted [s] STAT,0.2531,0.2531,0.2531,0.2531,
+Clock [MHz] STAT,3214.5691,3214.5691,3214.5691,3214.5691,
+CPI STAT,0.4451,0.4451,0.4451,0.4451,
+Cycles without execution [%] STAT,23.8694,23.8694,23.8694,23.8694,
+Cycles without execution due to L1D [%] STAT,21.6014,21.6014,21.6014,21.6014,
+Cycles without execution due to L2 [%] STAT,22.7945,22.7945,22.7945,22.7945,
+Cycles without execution due to memory [%] STAT,23.7038,23.7038,23.7038,23.7038,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  1280  1280  1280 35.12 42.86
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599846975 GHz,,,,
+TABLE,Region size-1280-1280-1280,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],0.426227,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,2877746000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,1148972000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,1054119000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,189551900,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,204042600,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,176006700,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,205897400,,,
+TABLE,Region size-1280-1280-1280,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,2877746000,2877746000,2877746000,2877746000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,1148972000,1148972000,1148972000,1148972000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,1054119000,1054119000,1054119000,1054119000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,189551900,189551900,189551900,189551900
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,204042600,204042600,204042600,204042600
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,176006700,176006700,176006700,176006700
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,205897400,205897400,205897400,205897400
+TABLE,Region size-1280-1280-1280,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],0.4262,,,,
+Runtime unhalted [s],0.4419,,,,
+Clock [MHz],2833.7895,,,,
+CPI,0.3993,,,,
+Cycles without execution [%],17.9201,,,,
+Cycles without execution due to L1D [%],15.3186,,,,
+Cycles without execution due to L2 [%],16.4975,,,,
+Cycles without execution due to memory [%],17.7587,,,,
+TABLE,Region size-1280-1280-1280,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,0.4262,0.4262,0.4262,0.4262,
+Runtime unhalted [s] STAT,0.4419,0.4419,0.4419,0.4419,
+Clock [MHz] STAT,2833.7895,2833.7895,2833.7895,2833.7895,
+CPI STAT,0.3993,0.3993,0.3993,0.3993,
+Cycles without execution [%] STAT,17.9201,17.9201,17.9201,17.9201,
+Cycles without execution due to L1D [%] STAT,15.3186,15.3186,15.3186,15.3186,
+Cycles without execution due to L2 [%] STAT,16.4975,16.4975,16.4975,16.4975,
+Cycles without execution due to memory [%] STAT,17.7587,17.7587,17.7587,17.7587,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  1536  1536  1536 35.70 42.31
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599987646 GHz,,,,
+TABLE,Region size-1536-1536-1536,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],0.692108,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,4942721000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,1924649000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,1714906000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,288676200,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,317171700,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,267780200,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,320440200,,,
+TABLE,Region size-1536-1536-1536,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,4942721000,4942721000,4942721000,4942721000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,1924649000,1924649000,1924649000,1924649000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,1714906000,1714906000,1714906000,1714906000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,288676200,288676200,288676200,288676200
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,317171700,317171700,317171700,317171700
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,267780200,267780200,267780200,267780200
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,320440200,320440200,320440200,320440200
+TABLE,Region size-1536-1536-1536,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],0.6921,,,,
+Runtime unhalted [s],0.7403,,,,
+Clock [MHz],2917.9813,,,,
+CPI,0.3894,,,,
+Cycles without execution [%],16.6493,,,,
+Cycles without execution due to L1D [%],13.9132,,,,
+Cycles without execution due to L2 [%],14.9989,,,,
+Cycles without execution due to memory [%],16.4795,,,,
+TABLE,Region size-1536-1536-1536,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,0.6921,0.6921,0.6921,0.6921,
+Runtime unhalted [s] STAT,0.7403,0.7403,0.7403,0.7403,
+Clock [MHz] STAT,2917.9813,2917.9813,2917.9813,2917.9813,
+CPI STAT,0.3894,0.3894,0.3894,0.3894,
+Cycles without execution [%] STAT,16.6493,16.6493,16.6493,16.6493,
+Cycles without execution due to L1D [%] STAT,13.9132,13.9132,13.9132,13.9132,
+Cycles without execution due to L2 [%] STAT,14.9989,14.9989,14.9989,14.9989,
+Cycles without execution due to memory [%] STAT,16.4795,16.4795,16.4795,16.4795,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  1792  1792  1792 31.89 43.18
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599942806 GHz,,,,
+TABLE,Region size-1792-1792-1792,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],1.138016,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,7840909000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,3483163000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,2841360000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,900369300,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,943475700,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,866345600,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,952903300,,,
+TABLE,Region size-1792-1792-1792,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,7840909000,7840909000,7840909000,7840909000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,3483163000,3483163000,3483163000,3483163000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,2841360000,2841360000,2841360000,2841360000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,900369300,900369300,900369300,900369300
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,943475700,943475700,943475700,943475700
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,866345600,866345600,866345600,866345600
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,952903300,952903300,952903300,952903300
+TABLE,Region size-1792-1792-1792,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],1.1380,,,,
+Runtime unhalted [s],1.3397,,,,
+Clock [MHz],3187.2148,,,,
+CPI,0.4442,,,,
+Cycles without execution [%],27.3574,,,,
+Cycles without execution due to L1D [%],24.8724,,,,
+Cycles without execution due to L2 [%],25.8492,,,,
+Cycles without execution due to memory [%],27.0868,,,,
+TABLE,Region size-1792-1792-1792,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,1.1380,1.1380,1.1380,1.1380,
+Runtime unhalted [s] STAT,1.3397,1.3397,1.3397,1.3397,
+Clock [MHz] STAT,3187.2148,3187.2148,3187.2148,3187.2148,
+CPI STAT,0.4442,0.4442,0.4442,0.4442,
+Cycles without execution [%] STAT,27.3574,27.3574,27.3574,27.3574,
+Cycles without execution due to L1D [%] STAT,24.8724,24.8724,24.8724,24.8724,
+Cycles without execution due to L2 [%] STAT,25.8492,25.8492,25.8492,25.8492,
+Cycles without execution due to memory [%] STAT,27.0868,27.0868,27.0868,27.0868,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  2048  2048  2048 20.25 41.87
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599935548 GHz,,,,
+TABLE,Region size-2048-2048-2048,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],2.553092,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,11695350000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,8005370000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,6494476000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,3735961000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,3730835000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,3632886000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,3756567000,,,
+TABLE,Region size-2048-2048-2048,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,11695350000,11695350000,11695350000,11695350000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,8005370000,8005370000,8005370000,8005370000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,6494476000,6494476000,6494476000,6494476000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,3735961000,3735961000,3735961000,3735961000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,3730835000,3730835000,3730835000,3730835000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,3632886000,3632886000,3632886000,3632886000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,3756567000,3756567000,3756567000,3756567000
+TABLE,Region size-2048-2048-2048,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],2.5531,,,,
+Runtime unhalted [s],3.0791,,,,
+Clock [MHz],3204.7922,,,,
+CPI,0.6845,,,,
+Cycles without execution [%],46.9256,,,,
+Cycles without execution due to L1D [%],45.3806,,,,
+Cycles without execution due to L2 [%],46.6682,,,,
+Cycles without execution due to memory [%],46.6042,,,,
+TABLE,Region size-2048-2048-2048,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,2.5531,2.5531,2.5531,2.5531,
+Runtime unhalted [s] STAT,3.0791,3.0791,3.0791,3.0791,
+Clock [MHz] STAT,3204.7922,3204.7922,3204.7922,3204.7922,
+CPI STAT,0.6845,0.6845,0.6845,0.6845,
+Cycles without execution [%] STAT,46.9256,46.9256,46.9256,46.9256,
+Cycles without execution due to L1D [%] STAT,45.3806,45.3806,45.3806,45.3806,
+Cycles without execution due to L2 [%] STAT,46.6682,46.6682,46.6682,46.6682,
+Cycles without execution due to memory [%] STAT,46.6042,46.6042,46.6042,46.6042,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  2304  2304  2304 16.35 43.20
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599989862 GHz,,,,
+TABLE,Region size-2304-2304-2304,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],4.491541,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,16599250000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,14154000000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,11491170000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,7335045000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,7305997000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,7184443000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,7349063000,,,
+TABLE,Region size-2304-2304-2304,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,16599250000,16599250000,16599250000,16599250000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,14154000000,14154000000,14154000000,14154000000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,11491170000,11491170000,11491170000,11491170000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,7335045000,7335045000,7335045000,7335045000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,7305997000,7305997000,7305997000,7305997000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,7184443000,7184443000,7184443000,7184443000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,7349063000,7349063000,7349063000,7349063000
+TABLE,Region size-2304-2304-2304,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],4.4915,,,,
+Runtime unhalted [s],5.4439,,,,
+Clock [MHz],3202.4813,,,,
+CPI,0.8527,,,,
+Cycles without execution [%],51.9222,,,,
+Cycles without execution due to L1D [%],50.7591,,,,
+Cycles without execution due to L2 [%],51.8231,,,,
+Cycles without execution due to memory [%],51.6179,,,,
+TABLE,Region size-2304-2304-2304,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,4.4915,4.4915,4.4915,4.4915,
+Runtime unhalted [s] STAT,5.4439,5.4439,5.4439,5.4439,
+Clock [MHz] STAT,3202.4813,3202.4813,3202.4813,3202.4813,
+CPI STAT,0.8527,0.8527,0.8527,0.8527,
+Cycles without execution [%] STAT,51.9222,51.9222,51.9222,51.9222,
+Cycles without execution due to L1D [%] STAT,50.7591,50.7591,50.7591,50.7591,
+Cycles without execution due to L2 [%] STAT,51.8231,51.8231,51.8231,51.8231,
+Cycles without execution due to memory [%] STAT,51.6179,51.6179,51.6179,51.6179,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  2560  2560  2560 14.16 42.51
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599953376 GHz,,,,
+TABLE,Region size-2560-2560-2560,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],7.157512,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,22765040000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,22520080000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,18326990000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,12666970000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,12633390000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,12507280000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,12687080000,,,
+TABLE,Region size-2560-2560-2560,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,22765040000,22765040000,22765040000,22765040000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,22520080000,22520080000,22520080000,22520080000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,18326990000,18326990000,18326990000,18326990000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,12666970000,12666970000,12666970000,12666970000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,12633390000,12633390000,12633390000,12633390000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,12507280000,12507280000,12507280000,12507280000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,12687080000,12687080000,12687080000,12687080000
+TABLE,Region size-2560-2560-2560,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],7.1575,,,,
+Runtime unhalted [s],8.6617,,,,
+Clock [MHz],3194.8049,,,,
+CPI,0.9892,,,,
+Cycles without execution [%],56.3367,,,,
+Cycles without execution due to L1D [%],55.5383,,,,
+Cycles without execution due to L2 [%],56.2474,,,,
+Cycles without execution due to memory [%],56.0983,,,,
+TABLE,Region size-2560-2560-2560,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,7.1575,7.1575,7.1575,7.1575,
+Runtime unhalted [s] STAT,8.6617,8.6617,8.6617,8.6617,
+Clock [MHz] STAT,3194.8049,3194.8049,3194.8049,3194.8049,
+CPI STAT,0.9892,0.9892,0.9892,0.9892,
+Cycles without execution [%] STAT,56.3367,56.3367,56.3367,56.3367,
+Cycles without execution due to L1D [%] STAT,55.5383,55.5383,55.5383,55.5383,
+Cycles without execution due to L2 [%] STAT,56.2474,56.2474,56.2474,56.2474,
+Cycles without execution due to memory [%] STAT,56.0983,56.0983,56.0983,56.0983,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  2816  2816  2816 13.44 43.47
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599989946 GHz,,,,
+TABLE,Region size-2816-2816-2816,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],9.973109,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,30294970000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,31547120000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,25631630000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,18259220000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,18202520000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,18051940000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,18279770000,,,
+TABLE,Region size-2816-2816-2816,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,30294970000,30294970000,30294970000,30294970000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,31547120000,31547120000,31547120000,31547120000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,25631630000,25631630000,25631630000,25631630000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,18259220000,18259220000,18259220000,18259220000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,18202520000,18202520000,18202520000,18202520000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,18051940000,18051940000,18051940000,18051940000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,18279770000,18279770000,18279770000,18279770000
+TABLE,Region size-2816-2816-2816,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],9.9731,,,,
+Runtime unhalted [s],12.1336,,,,
+Clock [MHz],3200.0382,,,,
+CPI,1.0413,,,,
+Cycles without execution [%],57.9443,,,,
+Cycles without execution due to L1D [%],57.2221,,,,
+Cycles without execution due to L2 [%],57.8792,,,,
+Cycles without execution due to memory [%],57.6995,,,,
+TABLE,Region size-2816-2816-2816,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,9.9731,9.9731,9.9731,9.9731,
+Runtime unhalted [s] STAT,12.1336,12.1336,12.1336,12.1336,
+Clock [MHz] STAT,3200.0382,3200.0382,3200.0382,3200.0382,
+CPI STAT,1.0413,1.0413,1.0413,1.0413,
+Cycles without execution [%] STAT,57.9443,57.9443,57.9443,57.9443,
+Cycles without execution due to L1D [%] STAT,57.2221,57.2221,57.2221,57.2221,
+Cycles without execution due to L2 [%] STAT,57.8792,57.8792,57.8792,57.8792,
+Cycles without execution due to memory [%] STAT,57.6995,57.6995,57.6995,57.6995,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  3072  3072  3072 13.43 42.45
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599990429 GHz,,,,
+TABLE,Region size-3072-3072-3072,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],12.963480,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,39248890000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,41043520000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,33348880000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,23820100000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,23777150000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,23573710000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,23842390000,,,
+TABLE,Region size-3072-3072-3072,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,39248890000,39248890000,39248890000,39248890000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,41043520000,41043520000,41043520000,41043520000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,33348880000,33348880000,33348880000,33348880000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,23820100000,23820100000,23820100000,23820100000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,23777150000,23777150000,23777150000,23777150000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,23573710000,23573710000,23573710000,23573710000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,23842390000,23842390000,23842390000,23842390000
+TABLE,Region size-3072-3072-3072,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],12.9635,,,,
+Runtime unhalted [s],15.7860,,,,
+Clock [MHz],3199.8903,,,,
+CPI,1.0457,,,,
+Cycles without execution [%],58.0905,,,,
+Cycles without execution due to L1D [%],57.4359,,,,
+Cycles without execution due to L2 [%],58.0362,,,,
+Cycles without execution due to memory [%],57.9316,,,,
+TABLE,Region size-3072-3072-3072,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,12.9635,12.9635,12.9635,12.9635,
+Runtime unhalted [s] STAT,15.7860,15.7860,15.7860,15.7860,
+Clock [MHz] STAT,3199.8903,3199.8903,3199.8903,3199.8903,
+CPI STAT,1.0457,1.0457,1.0457,1.0457,
+Cycles without execution [%] STAT,58.0905,58.0905,58.0905,58.0905,
+Cycles without execution due to L1D [%] STAT,57.4359,57.4359,57.4359,57.4359,
+Cycles without execution due to L2 [%] STAT,58.0362,58.0362,58.0362,58.0362,
+Cycles without execution due to memory [%] STAT,57.9316,57.9316,57.9316,57.9316,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  3328  3328  3328 13.45 43.40
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599877482 GHz,,,,
+TABLE,Region size-3328-3328-3328,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],16.455920,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,49902800000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,52140190000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,42361050000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,30226390000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,30168900000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,29920420000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,30250270000,,,
+TABLE,Region size-3328-3328-3328,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,49902800000,49902800000,49902800000,49902800000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,52140190000,52140190000,52140190000,52140190000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,42361050000,42361050000,42361050000,42361050000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,30226390000,30226390000,30226390000,30226390000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,30168900000,30168900000,30168900000,30168900000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,29920420000,29920420000,29920420000,29920420000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,30250270000,30250270000,30250270000,30250270000
+TABLE,Region size-3328-3328-3328,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],16.4559,,,,
+Runtime unhalted [s],20.0549,,,,
+Clock [MHz],3200.0648,,,,
+CPI,1.0448,,,,
+Cycles without execution [%],58.0172,,,,
+Cycles without execution due to L1D [%],57.3846,,,,
+Cycles without execution due to L2 [%],57.9714,,,,
+Cycles without execution due to memory [%],57.8611,,,,
+TABLE,Region size-3328-3328-3328,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,16.4559,16.4559,16.4559,16.4559,
+Runtime unhalted [s] STAT,20.0549,20.0549,20.0549,20.0549,
+Clock [MHz] STAT,3200.0648,3200.0648,3200.0648,3200.0648,
+CPI STAT,1.0448,1.0448,1.0448,1.0448,
+Cycles without execution [%] STAT,58.0172,58.0172,58.0172,58.0172,
+Cycles without execution due to L1D [%] STAT,57.3846,57.3846,57.3846,57.3846,
+Cycles without execution due to L2 [%] STAT,57.9714,57.9714,57.9714,57.9714,
+Cycles without execution due to memory [%] STAT,57.8611,57.8611,57.8611,57.8611,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  3584  3584  3584 13.44 42.55
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599991353 GHz,,,,
+TABLE,Region size-3584-3584-3584,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],20.576240,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,62328770000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,65159800000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,52965700000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,37775490000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,37660360000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,37354850000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,37819930000,,,
+TABLE,Region size-3584-3584-3584,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,62328770000,62328770000,62328770000,62328770000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,65159800000,65159800000,65159800000,65159800000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,52965700000,52965700000,52965700000,52965700000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,37775490000,37775490000,37775490000,37775490000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,37660360000,37660360000,37660360000,37660360000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,37354850000,37354850000,37354850000,37354850000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,37819930000,37819930000,37819930000,37819930000
+TABLE,Region size-3584-3584-3584,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],20.5762,,,,
+Runtime unhalted [s],25.0615,,,,
+Clock [MHz],3198.5779,,,,
+CPI,1.0454,,,,
+Cycles without execution [%],58.0418,,,,
+Cycles without execution due to L1D [%],57.3281,,,,
+Cycles without execution due to L2 [%],57.9736,,,,
+Cycles without execution due to memory [%],57.7969,,,,
+TABLE,Region size-3584-3584-3584,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,20.5762,20.5762,20.5762,20.5762,
+Runtime unhalted [s] STAT,25.0615,25.0615,25.0615,25.0615,
+Clock [MHz] STAT,3198.5779,3198.5779,3198.5779,3198.5779,
+CPI STAT,1.0454,1.0454,1.0454,1.0454,
+Cycles without execution [%] STAT,58.0418,58.0418,58.0418,58.0418,
+Cycles without execution due to L1D [%] STAT,57.3281,57.3281,57.3281,57.3281,
+Cycles without execution due to L2 [%] STAT,57.9736,57.9736,57.9736,57.9736,
+Cycles without execution due to memory [%] STAT,57.7969,57.7969,57.7969,57.7969,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  3840  3840  3840 13.43 43.38
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599952273 GHz,,,,
+TABLE,Region size-3840-3840-3840,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],25.352710,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,76543920000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,80187410000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,65235340000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,46599850000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,46510880000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,46119980000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,46644970000,,,
+TABLE,Region size-3840-3840-3840,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,76543920000,76543920000,76543920000,76543920000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,80187410000,80187410000,80187410000,80187410000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,65235340000,65235340000,65235340000,65235340000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,46599850000,46599850000,46599850000,46599850000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,46510880000,46510880000,46510880000,46510880000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,46119980000,46119980000,46119980000,46119980000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,46644970000,46644970000,46644970000,46644970000
+TABLE,Region size-3840-3840-3840,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],25.3527,,,,
+Runtime unhalted [s],30.8419,,,,
+Clock [MHz],3195.8665,,,,
+CPI,1.0476,,,,
+Cycles without execution [%],58.1699,,,,
+Cycles without execution due to L1D [%],57.5152,,,,
+Cycles without execution due to L2 [%],58.1137,,,,
+Cycles without execution due to memory [%],58.0027,,,,
+TABLE,Region size-3840-3840-3840,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,25.3527,25.3527,25.3527,25.3527,
+Runtime unhalted [s] STAT,30.8419,30.8419,30.8419,30.8419,
+Clock [MHz] STAT,3195.8665,3195.8665,3195.8665,3195.8665,
+CPI STAT,1.0476,1.0476,1.0476,1.0476,
+Cycles without execution [%] STAT,58.1699,58.1699,58.1699,58.1699,
+Cycles without execution due to L1D [%] STAT,57.5152,57.5152,57.5152,57.5152,
+Cycles without execution due to L2 [%] STAT,58.1137,58.1137,58.1137,58.1137,
+Cycles without execution due to memory [%] STAT,58.0027,58.0027,58.0027,58.0027,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  4096  4096  4096 13.44 38.92
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599987646 GHz,,,,
+TABLE,Region size-4096-4096-4096,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],30.685740,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,93241560000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,97380750000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,79080260000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,56400340000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,56291770000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,55831610000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,56456200000,,,
+TABLE,Region size-4096-4096-4096,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,93241560000,93241560000,93241560000,93241560000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,97380750000,97380750000,97380750000,97380750000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,79080260000,79080260000,79080260000,79080260000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,56400340000,56400340000,56400340000,56400340000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,56291770000,56291770000,56291770000,56291770000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,55831610000,55831610000,55831610000,55831610000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,56456200000,56456200000,56456200000,56456200000
+TABLE,Region size-4096-4096-4096,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],30.6857,,,,
+Runtime unhalted [s],37.4543,,,,
+Clock [MHz],3201.6681,,,,
+CPI,1.0444,,,,
+Cycles without execution [%],57.9747,,,,
+Cycles without execution due to L1D [%],57.3333,,,,
+Cycles without execution due to L2 [%],57.9173,,,,
+Cycles without execution due to memory [%],57.8058,,,,
+TABLE,Region size-4096-4096-4096,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,30.6857,30.6857,30.6857,30.6857,
+Runtime unhalted [s] STAT,37.4543,37.4543,37.4543,37.4543,
+Clock [MHz] STAT,3201.6681,3201.6681,3201.6681,3201.6681,
+CPI STAT,1.0444,1.0444,1.0444,1.0444,
+Cycles without execution [%] STAT,57.9747,57.9747,57.9747,57.9747,
+Cycles without execution due to L1D [%] STAT,57.3333,57.3333,57.3333,57.3333,
+Cycles without execution due to L2 [%] STAT,57.9173,57.9173,57.9173,57.9173,
+Cycles without execution due to memory [%] STAT,57.8058,57.8058,57.8058,57.8058,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  4352  4352  4352 14.46 43.42
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599913265 GHz,,,,
+TABLE,Region size-4352-4352-4352,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],34.227280,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,111827400000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,108640900000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,88247820000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,60691040000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,60550250000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,59973410000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,60813120000,,,
+TABLE,Region size-4352-4352-4352,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,111827400000,111827400000,111827400000,111827400000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,108640900000,108640900000,108640900000,108640900000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,88247820000,88247820000,88247820000,88247820000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,60691040000,60691040000,60691040000,60691040000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,60550250000,60550250000,60550250000,60550250000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,59973410000,59973410000,59973410000,59973410000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,60813120000,60813120000,60813120000,60813120000
+TABLE,Region size-4352-4352-4352,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],34.2273,,,,
+Runtime unhalted [s],41.7864,,,,
+Clock [MHz],3200.7240,,,,
+CPI,0.9715,,,,
+Cycles without execution [%],55.9763,,,,
+Cycles without execution due to L1D [%],55.2033,,,,
+Cycles without execution due to L2 [%],55.8639,,,,
+Cycles without execution due to memory [%],55.7343,,,,
+TABLE,Region size-4352-4352-4352,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,34.2273,34.2273,34.2273,34.2273,
+Runtime unhalted [s] STAT,41.7864,41.7864,41.7864,41.7864,
+Clock [MHz] STAT,3200.7240,3200.7240,3200.7240,3200.7240,
+CPI STAT,0.9715,0.9715,0.9715,0.9715,
+Cycles without execution [%] STAT,55.9763,55.9763,55.9763,55.9763,
+Cycles without execution due to L1D [%] STAT,55.2033,55.2033,55.2033,55.2033,
+Cycles without execution due to L2 [%] STAT,55.8639,55.8639,55.8639,55.8639,
+Cycles without execution due to memory [%] STAT,55.7343,55.7343,55.7343,55.7343,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  4608  4608  4608 15.43 42.36
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599987606 GHz,,,,
+TABLE,Region size-4608-4608-4608,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],38.057690,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,132560600000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,120956200000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,98236150000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,65305050000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,65339990000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,64513260000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,65528690000,,,
+TABLE,Region size-4608-4608-4608,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,132560600000,132560600000,132560600000,132560600000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,120956200000,120956200000,120956200000,120956200000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,98236150000,98236150000,98236150000,98236150000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,65305050000,65305050000,65305050000,65305050000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,65339990000,65339990000,65339990000,65339990000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,64513260000,64513260000,64513260000,64513260000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,65528690000,65528690000,65528690000,65528690000
+TABLE,Region size-4608-4608-4608,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],38.0577,,,,
+Runtime unhalted [s],46.5218,,,,
+Clock [MHz],3201.3126,,,,
+CPI,0.9125,,,,
+Cycles without execution [%],54.1756,,,,
+Cycles without execution due to L1D [%],53.3361,,,,
+Cycles without execution due to L2 [%],53.9907,,,,
+Cycles without execution due to memory [%],54.0195,,,,
+TABLE,Region size-4608-4608-4608,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,38.0577,38.0577,38.0577,38.0577,
+Runtime unhalted [s] STAT,46.5218,46.5218,46.5218,46.5218,
+Clock [MHz] STAT,3201.3126,3201.3126,3201.3126,3201.3126,
+CPI STAT,0.9125,0.9125,0.9125,0.9125,
+Cycles without execution [%] STAT,54.1756,54.1756,54.1756,54.1756,
+Cycles without execution due to L1D [%] STAT,53.3361,53.3361,53.3361,53.3361,
+Cycles without execution due to L2 [%] STAT,53.9907,53.9907,53.9907,53.9907,
+Cycles without execution due to memory [%] STAT,54.0195,54.0195,54.0195,54.0195,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  4864  4864  4864 16.26 43.44
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599988321 GHz,,,,
+TABLE,Region size-4864-4864-4864,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],42.560650,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,155900700000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,135312200000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,109897300000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,71090470000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,71189540000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,70131410000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,71411720000,,,
+TABLE,Region size-4864-4864-4864,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,155900700000,155900700000,155900700000,155900700000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,135312200000,135312200000,135312200000,135312200000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,109897300000,109897300000,109897300000,109897300000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,71090470000,71090470000,71090470000,71090470000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,71189540000,71189540000,71189540000,71189540000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,70131410000,70131410000,70131410000,70131410000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,71411720000,71411720000,71411720000,71411720000
+TABLE,Region size-4864-4864-4864,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],42.5607,,,,
+Runtime unhalted [s],52.0434,,,,
+Clock [MHz],3201.2628,,,,
+CPI,0.8679,,,,
+Cycles without execution [%],52.7755,,,,
+Cycles without execution due to L1D [%],51.8293,,,,
+Cycles without execution due to L2 [%],52.5381,,,,
+Cycles without execution due to memory [%],52.6113,,,,
+TABLE,Region size-4864-4864-4864,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,42.5607,42.5607,42.5607,42.5607,
+Runtime unhalted [s] STAT,52.0434,52.0434,52.0434,52.0434,
+Clock [MHz] STAT,3201.2628,3201.2628,3201.2628,3201.2628,
+CPI STAT,0.8679,0.8679,0.8679,0.8679,
+Cycles without execution [%] STAT,52.7755,52.7755,52.7755,52.7755,
+Cycles without execution due to L1D [%] STAT,51.8293,51.8293,51.8293,51.8293,
+Cycles without execution due to L2 [%] STAT,52.5381,52.5381,52.5381,52.5381,
+Cycles without execution due to memory [%] STAT,52.6113,52.6113,52.6113,52.6113,
+--------------------------------------------------------------------------------
+CPU name:	Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+CPU type:	Intel Xeon Haswell EN/EP/EX processor
+CPU clock:	2.60 GHz
+--------------------------------------------------------------------------------
+>>> (0)  5120  5120  5120 15.36 42.54
+--------------------------------------------------------------------------------
+STRUCT,Info,3,,,
+CPU name:,Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz,,,,
+CPU type:,Intel Xeon Haswell EN/EP/EX processor,,,,
+CPU clock:,2.599991073 GHz,,,,
+TABLE,Region size-5120-5120-5120,Group 1 Raw,CYCLE_ACTIVITY,7,
+Region Info,Core 0,,,,
+RDTSC Runtime [s],52.576070,,,,
+call count,1,,,,
+Event,Counter,Core 0,,,
+INSTR_RETIRED_ANY,FIXC0,181831500000,,,
+CPU_CLK_UNHALTED_CORE,FIXC1,167222400000,,,
+CPU_CLK_UNHALTED_REF,FIXC2,135833100000,,,
+CYCLE_ACTIVITY_STALLS_L2_PENDING,PMC0,91451870000,,,
+CYCLE_ACTIVITY_STALLS_LDM_PENDING,PMC1,91362910000,,,
+CYCLE_ACTIVITY_STALLS_L1D_PENDING,PMC2,90174510000,,,
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE,PMC3,91670680000,,,
+TABLE,Region size-5120-5120-5120,Group 1 Raw STAT,CYCLE_ACTIVITY,7,
+Event,Counter,Sum,Min,Max,Avg
+INSTR_RETIRED_ANY STAT,FIXC0,181831500000,181831500000,181831500000,181831500000
+CPU_CLK_UNHALTED_CORE STAT,FIXC1,167222400000,167222400000,167222400000,167222400000
+CPU_CLK_UNHALTED_REF STAT,FIXC2,135833100000,135833100000,135833100000,135833100000
+CYCLE_ACTIVITY_STALLS_L2_PENDING STAT,PMC0,91451870000,91451870000,91451870000,91451870000
+CYCLE_ACTIVITY_STALLS_LDM_PENDING STAT,PMC1,91362910000,91362910000,91362910000,91362910000
+CYCLE_ACTIVITY_STALLS_L1D_PENDING STAT,PMC2,90174510000,90174510000,90174510000,90174510000
+CYCLE_ACTIVITY_CYCLES_NO_EXECUTE STAT,PMC3,91670680000,91670680000,91670680000,91670680000
+TABLE,Region size-5120-5120-5120,Group 1 Metric,CYCLE_ACTIVITY,8,
+Metric,Core 0,,,,
+Runtime (RDTSC) [s],52.5761,,,,
+Runtime unhalted [s],64.3165,,,,
+Clock [MHz],3200.8159,,,,
+CPI,0.9197,,,,
+Cycles without execution [%],54.8196,,,,
+Cycles without execution due to L1D [%],53.9249,,,,
+Cycles without execution due to L2 [%],54.6888,,,,
+Cycles without execution due to memory [%],54.6356,,,,
+TABLE,Region size-5120-5120-5120,Group 1 Metric STAT,CYCLE_ACTIVITY,8,
+Metric,Sum,Min,Max,Avg,
+Runtime (RDTSC) [s] STAT,52.5761,52.5761,52.5761,52.5761,
+Runtime unhalted [s] STAT,64.3165,64.3165,64.3165,64.3165,
+Clock [MHz] STAT,3200.8159,3200.8159,3200.8159,3200.8159,
+CPI STAT,0.9197,0.9197,0.9197,0.9197,
+Cycles without execution [%] STAT,54.8196,54.8196,54.8196,54.8196,
+Cycles without execution due to L1D [%] STAT,53.9249,53.9249,53.9249,53.9249,
+Cycles without execution due to L2 [%] STAT,54.6888,54.6888,54.6888,54.6888,
+Cycles without execution due to memory [%] STAT,54.6356,54.6356,54.6356,54.6356,

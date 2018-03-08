@@ -1,0 +1,6 @@
+Metric,Runtime (RDTSC) [s],Runtime unhalted [s],Clock [MHz],CPI,L2 to L1 load bandwidth [MBytes/s],L2 to L1 load data volume [GBytes],L1 to L2 evict bandwidth [MBytes/s],L1 to L2 evict data volume [GBytes],L1 to/from L2 bandwidth [MBytes/s],L1 to/from L2 data volume [GBytes],L3 to L2 load bandwidth [MBytes/s],L3 to L2 load data volume [GBytes],L2 to L3 evict bandwidth [MBytes/s],L2 to L3 evict data volume [GBytes],L2 to/from L3 bandwidth [MBytes/s],L2 to/from L3 data volume [GBytes],System to L3 bandwidth [MBytes/s],System to L3 data volume [GBytes],L3 to system bandwidth [MBytes/s],L3 to system data volume [GBytes],L3 to/from system bandwidth [MBytes/s],L3 to/from system data volume [GBytes],Memory read bandwidth [MBytes/s],Memory read data volume [GBytes],Memory write bandwidth [MBytes/s],Memory write data volume [GBytes],Memory bandwidth [MBytes/s],Memory data volume [GBytes]
+Core 0,39.3090,48.1370,3194.9671,1.4080,20459.6914,804.2496,10098.7050,396.9698,30558.3964,1201.2194,10218.1948,401.6668,5.5004,0.2162,10223.6952,401.8830,10359.2976,407.2134,8.2763,0.3253,10367.5739,407.5388,9411.5639,369.9590,14.5436,0.5717,9426.1075,370.5307
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,

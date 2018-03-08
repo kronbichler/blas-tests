@@ -1,0 +1,6 @@
+Metric,Runtime (RDTSC) [s],Runtime unhalted [s],Clock [MHz],CPI,Cycles without execution [%],Cycles without execution due to L1D [%],Cycles without execution due to L2 [%],Cycles without execution due to memory [%]
+Core 0,30.6857,37.4543,3201.6681,1.0444,57.9747,57.3333,57.9173,57.8058
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,

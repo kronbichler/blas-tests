@@ -1,0 +1,23 @@
+ab12cde@login22:~> (|color(blue)likwid-topology) 
+--------------------------------------------------------------------------------
+CPU name:	(|color(blue)Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz)
+CPU type:	(|color(blue)Intel Xeon Haswell EN/EP/EX processor)
+CPU stepping:    2
+********************************************************************************
+Hardware Thread Topology
+*****************************
+Sockets:            2
+Cores per socket:   12
+Threads per core:   1
+*****************************
+Cache Topology
+*****************************
+Level:  1
+Size:   (|color(blue)32 kB)
+-----------------------------
+Level:  2
+Size:   (|color(blue)256 kB)
+-----------------------------
+Level:  3
+Size:   (|color(blue)30 MB)
+-----------------------------

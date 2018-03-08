@@ -11,3 +11,13 @@ blas_1
 blas_2
 blas_3_basic
 build/
+*.aux
+*.dvi
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+latex/document.pdf

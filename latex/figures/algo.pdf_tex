@@ -1,0 +1,78 @@
+%% Creator: Inkscape inkscape 0.92.2, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'algo.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{318.74998961bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.74053312)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{algo.pdf}}%
+    \put(0.43446722,0.14895944){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{+=}}}%
+    \put(0.7241663,0.1488255){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\times$}}}%
+    \put(0.27707989,0.00368873){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$C$}}}%
+    \put(0.60008976,0.00368873){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$A$}}}%
+    \put(0.86510626,0.00368873){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$B$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{algo.pdf}}%
+    \put(0.01025208,0.13766223){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{RAM}}}%
+    \put(0.01025208,0.32589771){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{L3-Cache}}}%
+    \put(0.01025208,0.44825077){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{L2-Cache}}}%
+    \put(0.01025208,0.56589795){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{L1-Cache}}}%
+    \put(0.01025208,0.66942746){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Register}}}%
+    \put(0.89659843,0.72119222){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{}}}%
+    \put(0.84690162,0.45766254){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{{\tiny whole sliver is in}}}}%
+    \put(0.84690162,0.42942722){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{{\tiny L1 cache}}}}%
+    \put(0.51607286,0.57530972){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\tiny sliver is streamed}}}}%
+    \put(0.51552743,0.5470744){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\tiny from L2 cache}}}}%
+    \put(0.4400896,0.44604197){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\tilde{A}$}}}%
+    \put(0.71773659,0.31427713){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{$\tilde{B}$}}}%
+    \put(0.53435084,0.3635448){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\tiny pack into}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{algo.pdf}}%
+    \put(0.53435084,0.33530948){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{{\tiny contiguous buffer}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{algo.pdf}}%
+    \put(0.89511934,0.72861522){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{{\tiny Micro-kernel}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{algo.pdf}}%
+  \end{picture}%
+\endgroup%
