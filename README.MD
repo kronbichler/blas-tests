@@ -11,8 +11,8 @@ which gives an hands-on introduction into the basic concepts of the library
 multiplication."](http://www.cs.utexas.edu/~flame/pubs/GotoTOMS_revision.pdf)
 
 
-* [Smith, Tyler M.; van de Geijn, Robert; Smelyanskiy, Mikhail; Hammond, Jeff R.; van Zee,
-Field G. (2014): "Anatomy of high-performance many-threaded matrix multiplication."]
+* [Smith, Tyler M.; van de Geijn, Robert; Smelyanskiy, Mikhail; Hammond, Jeff R.; van Zee, 
+Field G. (2014): "Anatomy of high-performance many-threaded matrix multiplication." ]
 (http://ieeexplore.ieee.org.eaccess.ub.tum.de/stamp/stamp.jsp?tp=&arnumber=6877334)
 
 * [van Zee, Field G.; Austel, Vernon; Gunnels, John A.; Killough, Lee; Smith, Tyler M.; Marker,
