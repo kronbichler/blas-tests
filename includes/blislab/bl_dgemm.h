@@ -53,9 +53,9 @@ void bl_macro_kernel( int m, int n, int k, double *packA, double *packB, double 
     aux.b_next = packB;
 
     for ( j = 0; j < n; j += DGEMM_NR ) {                        // 2-th loop around micro-kernel
-        aux.n  = min( n - j, DGEMM_NR );
+        aux.n  = MIN( n - j, DGEMM_NR );
         for ( i = 0; i < m; i += DGEMM_MR ) {                    // 1-th loop around micro-kernel
-            aux.m = min( m - i, DGEMM_MR );
+            aux.m = MIN( m - i, DGEMM_MR );
             if ( i + DGEMM_MR >= m ) {
                 aux.b_next += DGEMM_NR * k;
             }
@@ -91,13 +91,13 @@ void bl_dgemm( int m, int n, int k, double *XA, int lda, double *XB, int ldb,
     packB  = bl_malloc_aligned( DGEMM_KC, ( DGEMM_NC + 1 ) , sizeof(double) );
 
     for ( jc = 0; jc < n; jc += DGEMM_NC ) {                                       // 5-th loop around micro-kernel
-        jb = min( n - jc, DGEMM_NC );
+        jb = MIN( n - jc, DGEMM_NC );
         for ( pc = 0; pc < k; pc += DGEMM_KC ) {                                   // 4-th loop around micro-kernel
-            pb = min( k - pc, DGEMM_KC );
+            pb = MIN( k - pc, DGEMM_KC );
 
             for ( j = 0; j < jb; j += DGEMM_NR ) {
                 packB_kcxnc_d(
-                        min( jb - j, DGEMM_NR ),
+                        MIN( jb - j, DGEMM_NR ),
                         pb,
                         &XB[ pc ],
                         k, // should be ldXB instead
@@ -109,11 +109,11 @@ void bl_dgemm( int m, int n, int k, double *XA, int lda, double *XB, int ldb,
 
             for ( ic = 0; ic < m; ic += DGEMM_MC ) {                               // 3-rd loop around micro-kernel
 
-                ib = min( m - ic, DGEMM_MC );
+                ib = MIN( m - ic, DGEMM_MC );
 
                 for ( i = 0; i < ib; i += DGEMM_MR ) {
                     packA_mcxkc_d(
-                            min( ib - i, DGEMM_MR ),
+                            MIN( ib - i, DGEMM_MR ),
                             pb,
                             &XA[ pc * lda ],
                             m,

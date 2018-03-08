@@ -3,6 +3,7 @@
 #include <vector>
 #include <chrono>
 #include <cmath>
+#include <algorithm>
 
 #ifdef LIKWID_PERFMON
     #include <likwid.h>
@@ -24,8 +25,8 @@ void computeError( int ldc, int ldc_ref, int m, int n, double *C, double *C_ref 
 
 void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
     int    i, j, p;
-    double ref_beg, ref_time, bl_dgemm_beg, bl_dgemm_time;
-    double ref_rectime, bl_dgemm_rectime;
+    double blis_dgemm_time = std::numeric_limits<double>::max(); 
+    double ref_dgemm_time  = blis_dgemm_time;
 
     double* A    = (double*)malloc( sizeof(double) * m * k );
     double* B    = (double*)malloc( sizeof(double) * k * n );
@@ -72,15 +73,11 @@ void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
 #endif
     
     for ( i = 0; i < nrepeats; i ++ ) {
-        bl_dgemm_beg = bl_clock();
+        auto start = std::chrono::high_resolution_clock::now();
         bl_dgemm( m, n, k, A, lda, B, ldb, C, ldc );
-        bl_dgemm_time = bl_clock() - bl_dgemm_beg;
-
-        if ( i == 0 ) {
-            bl_dgemm_rectime = bl_dgemm_time;
-        } else {
-            bl_dgemm_rectime = bl_dgemm_time < bl_dgemm_rectime ? bl_dgemm_time : bl_dgemm_rectime;
-        }
+        blis_dgemm_time = std::min(
+                blis_dgemm_time,
+                std::chrono::duration<double>(std::chrono::high_resolution_clock::now()-start).count());
     }
         
 #ifdef LIKWID_PERFMON
@@ -92,25 +89,21 @@ void run_dgemm( int m, int n, int k, int nrepeats, bool check) {
     
     if(check){
         for ( i = 0; i < nrepeats; i ++ ) {
-            ref_beg = bl_clock();
+            auto start = std::chrono::high_resolution_clock::now();
             bl_dgemm_ref( m, n, k, A, lda, B, ldb, C_ref, ldc_ref );
-            ref_time = bl_clock() - ref_beg;
-
-            if ( i == 0 ) {
-                ref_rectime = ref_time;
-            } else {
-                ref_rectime = ref_time < ref_rectime ? ref_time : ref_rectime;
-            }
+            ref_dgemm_time = std::min(
+                    ref_dgemm_time,
+                    std::chrono::duration<double>(std::chrono::high_resolution_clock::now()-start).count());
         }
 
         computeError( ldc, ldc_ref, m, n, C, C_ref );
         free(C_ref);
         printf( ">>> (0) %5d %5d %5d %5.2lf %5.2lf\n", 
-                m, n, k, flops / bl_dgemm_rectime, flops / ref_rectime );
+                m, n, k, flops / blis_dgemm_time, flops / ref_dgemm_time );
     } else {
         printf("Test C=A*B with A=%dX%d B=%dX%d\n", m,k,k,n);
         printf( "Serial  1 thread %15.5lf GFLOPs/s\n", 
-                flops / bl_dgemm_rectime );
+                flops / blis_dgemm_time );
     }
 
     // clean up

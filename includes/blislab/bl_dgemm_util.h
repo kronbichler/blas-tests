@@ -9,7 +9,7 @@
 #include <time.h>
 #include "bl_config.h"
 
-#define min( i, j ) ( (i)<(j) ? (i): (j) )
+#define MIN( i, j ) ( (i)<(j) ? (i): (j) )
 
 #define A( i, j )     A[ (j)*lda + (i) ]
 #define B( i, j )     B[ (j)*ldb + (i) ]
