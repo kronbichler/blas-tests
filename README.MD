@@ -11,8 +11,7 @@ which gives an hands-on introduction into the basic concepts of the library
 multiplication."](http://www.cs.utexas.edu/~flame/pubs/GotoTOMS_revision.pdf)
 
 
-* [dfs]
-(http://ieeexplore.ieee.org.eaccess.ub.tum.de/stamp/stamp.jsp?tp=&arnumber=6877334)
+* [dfs]( http://ieeexplore.ieee.org.eaccess.ub.tum.de/stamp/stamp.jsp?tp=&arnumber=6877334 )
 
 * [van Zee, Field G.; Austel, Vernon; Gunnels, John A.; Killough, Lee; Smith, Tyler M.; Marker,
 Bryan et al. (2016): "The BLIS Framework." ](
