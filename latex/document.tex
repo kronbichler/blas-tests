@@ -544,6 +544,23 @@ Further details on \textcolor{blue}{BLIS} in:
 
 \end{frame}
 
+\begin{frame}{\textcolor{blue}{Putting All Together (cont.)}}
+
+In the tutorial, we choose following configuration (see \textcolor{blue}{\texttt{bl\_config.h}}):
+\begin{align*}
+MC = 72 \quad \quad NC = 4080 \quad KC = 4080\\
+MR = 8 \quad NR = 6 \qquad\qquad
+\end{align*}
+
+such that
+\begin{align*}
+\textcolor{blue}{|\tilde{A}|} &\le MC \times KC \approx  144kB \textcolor{blue}{\le 256kB}\\
+\textcolor{blue}{|\tilde{B}|} &\le KC \times NC \approx  8MB \textcolor{blue}{\le 30MB}\\
+\textcolor{blue}{|sliver\,of\,\tilde{B}|} &\le KC \times NR \approx  12kB \textcolor{blue}{\le 32kB}\\
+\end{align*}
+
+\end{frame}
+
 \subsection{Performance Tests}
 
 \begin{frame}[fragile]{\textcolor{blue}{Tests: Introduction}}
