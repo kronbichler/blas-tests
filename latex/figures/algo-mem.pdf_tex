@@ -58,7 +58,7 @@
     \put(0.58169474,0.19157311){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{72 $\rightarrow$  \textcolor{red}{144kB}}}}%
     \put(0.72917689,0.07103879){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{\textcolor{red}{8MB} $\leftarrow$  256}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{algo-mem.pdf}}%
-    \put(0.85104878,0.14715676){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{4048}}}%
+    \put(0.85104878,0.14715676){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{4080}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{algo-mem.pdf}}%
     \put(0.47005912,0.2295682){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{256}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{algo-mem.pdf}}%
